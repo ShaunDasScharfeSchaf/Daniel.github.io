@@ -1,57 +1,59 @@
-body {
-    
-    max-width: 50em;
-    font-family: sans-serif;
-    text-align: center;
-    background-color: #D6D6D6;
-    border: thick solid #2458B7;
-    border-radius: 1em;
-    padding: 40px;
-    margin: 10px auto;
-    }
-    h1, h2 {
-    background-color: #4672c3;
-    color: #D6D6D6;
-    border-radius: 1em;
-    text-decoration: overline;
-    }
-    a {
-    color: #122240;
-    font-weight: 1000;
-    }
+.LeisteOben{
+  display:block;
+  padding:8px 16px;
+  text-align:center;
+  color:#fff;
+  background-color:#000;
+  text-decoration: none;
+}
 
-    p {
-    color: #122240;
-    }
+.Knöpfchen{
+  border:none;
+  display:inline-block;
+  padding:8px 16px;
+  vertical-align:middle;
+  overflow:hidden;
+  text-decoration:none;
+  color:inherit;
+  background-color:inherit;
+  text-align:center;
+  cursor:pointer;
+  white-space:nowrap
+}
 
-    q{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr ;
-        grid-template-rows: 1fr 1fr 1fr;
-    }
-    #id1 {
-        grid-column: 1 / 5;
-        grid-row: 1 / 2;
-        }
+.WS{
+  color:#fff!important;
+  background-color:#000!important
+}
 
-    #id10 {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr ;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-column: 1 /1;
-        grid-row: 1 ;
-        }
+.W{
+  color:#fff!important;
+}
 
-    #id11 {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr ;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-column: 2 / 2;
-        grid-row: 1 / 2;
-        }
+.w3-display-bottomleft{position:absolute;left:0;bottom:0}
 
-    #id4 {
-        grid-column: 1 / 1;
-        grid-row: 4 / 4;
-        }
-            
+.center{
+  text-align:center!important
+}
+
+
+
+
+.GrauUnterpunkt{
+  color:#757575!important
+}
+
+.w3-dark-grey{
+  color:#fff!important;background-color:#6a6969!important
+}
+
+.w3-padding-large{padding:12px 24px!important}
+
+.w3-hide-small{display:none!important}
+
+.w3-tag{background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;text-align:center}
+
+.w3-display-middle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}  
+
+.w3-text-white,.w3-hover-text-white:hover{color:#fff!important}
+
