@@ -1,20 +1,134 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <link rel="stylesheet" href="stylesheet.css">
-    <title>Die Familie von Daniel</title>
+<title>Reifenhändler</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="ReifenCSS.css">
+<style>
+body, html {
+  height: 100%;
+  font-family:"Inconsolata",sans-serif;
+}
+
+.BildOben {
+  background-position: center;
+  background-size: cover;
+  background-image: url(TestLand.jpg);
+  min-height: 75%;
+}
+</style>
 </head>
-
 <body>
-    <h1>Auf diesen glorreichen Seiten stelle ich euch Daniels Familie vor.</h1>
-    <p>Auf dieser Seite möchte ich euch <a href=DanielsMum.html>Daniels Mutter</a> vorstellen</p>
-    
-    <br><p>Auf dieser Seite möchte ich euch <a href=DanielsDad.html>Daniels Dad</a>vorstellen</p>
-    
-    <br><p>Auf dieser Seite möchte ich euch <a href=DanielsSchwester.html>Daniels Schwester</a> vorstellen</p>
 
+<!-- Links (sit on top) -->
+  <div class="w3-row w3-padding WS">
+    <div class="w3-col s3">
+      <a href="#" class="LeisteOben">Übersicht</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="LeisteOben">Über uns</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="LeisteOben">Unsere Angebote</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="LeisteOben">Standort</a>
+    </div>
+  </div>
+
+<!-- Schrift im Titelbild -->
+<header class="BildOben" id="home">
+  <div class="w3-display-middle center">
+    <span class="W" style="font-size:90px">keine<br>Ahnung</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="  w3-padding-64"><span class="w3-tag w3-wide">Über uns</span></h5>
+    <p>Unser Reifenhändler ist seit vielen Jahren ein zuverlässiger Partner für Autofahrer in der Region. Wir bieten unseren Kunden eine breite Auswahl an Reifen namhafter Hersteller, darunter Sommerreifen, Winterreifen und Ganzjahresreifen. Unser Sortiment umfasst auch Spezialreifen wie Run-Flat-Reifen und Offroad-Reifen.</p>
+    <p>Unsere Mitarbeiter verfügen über umfassendes Know-how und sind immer auf dem neuesten Stand der Technik. Wir bieten unseren Kunden nicht nur den Verkauf von Reifen an, sondern auch fachkundige Beratung, um die bestmögliche Wahl zu treffen. Wir helfen unseren Kunden dabei, die richtigen Reifen für ihr Fahrzeug, ihren Fahrstil und ihre Bedürfnisse zu finden.</p>
+    <p>Neben dem Verkauf von Reifen bieten wir auch Achsvermessungen an, um sicherzustellen, dass das Fahrzeug optimal ausgerichtet ist. Eine korrekte Achsausrichtung ist wichtig, um die Lebensdauer der Reifen zu verlängern, die Fahrstabilität und das Handling zu verbessern sowie den Kraftstoffverbrauch zu reduzieren.</p>
+    <p>Wir sind stolz darauf, unseren Kunden einen erstklassigen Service und faire Preise zu bieten. Unser Ziel ist es, dass unsere Kunden mit ihrem Einkauf bei uns zufrieden sind und sich auf uns verlassen können. Wenn Sie nach Reifen suchen oder eine Achsvermessung benötigen, besuchen Sie uns gerne und lassen Sie uns Ihnen helfen.</p>
+    <img src="/w3images/coffeeshop.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Öffnungszeiten:</strong> immer</p>
+    <p><strong>Adresse:</strong> Hier</p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="center w3-padding-48"><span class="w3-tag w3-wide">Unsere Angebote</span></h5>
+    <div class="w3-row center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Reifen');" id="myLink">
+        <div class="w3-col s6 tablink">Reifen</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Achsvermessung');">
+        <div class="w3-col s6 tablink">Achsvermessung</div>
+      </a>
+    </div>
+
+    <div id="Reifen" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Pirelli Sommerreifen</h5>
+      <p class="GrauUnterpunkt">Viel Gummi</p><br>
+    </div>
+    <div id="Achsvermessung" class="w3-container menu w3-padding-48 w3-card">
+        <h5>Achsvermessung</h5>
+        <p class="GrauUnterpunkt">Machen sie eine Achsvermessung</p><br>
+    </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="center w3-padding-48"><span class="w3-tag w3-wide">Übersicht</span></h5>
+    <p>Finde </p>
+    <img src="/w3images/map.jpg" class="w3-image" style="width:100%">
+    <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+    <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="Knöpfchen WS" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="center GrauUnterpunkt w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+    // Tabbed Menu
+    function openMenu(evt, menuName) {
+      var i, x, tablinks;
+      x = document.getElementsByClassName("menu");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < x.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+      }
+      document.getElementById(menuName).style.display = "block";
+      evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+    }
+    document.getElementById("myLink").click();
+    </script>
 
 </body>
-
 </html>
