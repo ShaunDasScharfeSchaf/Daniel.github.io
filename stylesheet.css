@@ -1,57 +1,39 @@
-body {
-    
-    max-width: 50em;
-    font-family: sans-serif;
-    text-align: center;
-    background-color: #D6D6D6;
-    border: thick solid #2458B7;
-    border-radius: 1em;
-    padding: 40px;
-    margin: 10px auto;
-    }
-    h1, h2 {
-    background-color: #4672c3;
-    color: #D6D6D6;
-    border-radius: 1em;
-    text-decoration: overline;
-    }
-    a {
-    color: #122240;
-    font-weight: 1000;
-    }
+.Groß{font-size: large;text-align:center}
+.PaddingFooter{padding-top:30px;padding-bottom:30px;}
+.PaddingMitte{padding-top:50px;padding-bottom: 50px;}
+.Center{margin-left:auto;margin-right:auto}
+.TextBildMittig{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);}
 
-    p {
-    color: #122240;
+
+/*Farben*/
+.WS{color:#fff;background-color:#000}
+.W{color:#fff;}  
+.B{color:#000}
+.Schwarzhinterlegt{background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;}
+
+
+.Test{
+  width:30px; 
+  padding:125px; 
+  margin:0 50px;
+}
+
+body {margin: 0;padding: 0;}
+.navbar {background-color: #000000;height: 50px;}
+nav ul {list-style: none;padding: 0;margin: 0;}
+nav {float: auto;margin: 0;}
+li {display: inline;padding: 100px;} 
+nav a {text-decoration: none;color: #ffffff;display: inline-block;padding-top: 15px;}
+  
+  @media screen and (max-width: 700px) {
+    nav {
+      width: 100%;
+      margin-top: -5px;
     }
-
-    q{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr ;
-        grid-template-rows: 1fr 1fr 1fr;
+  
+    nav li {
+      display: block;
+      background-color: #e5e5e5;
+      text-align: center;
     }
-    #id1 {
-        grid-column: 1 / 5;
-        grid-row: 1 / 2;
-        }
-
-    #id10 {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr ;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-column: 1 /1;
-        grid-row: 1 ;
-        }
-
-    #id11 {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr ;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-column: 2 / 2;
-        grid-row: 1 / 2;
-        }
-
-    #id4 {
-        grid-column: 1 / 1;
-        grid-row: 4 / 4;
-        }
-            
+   }
