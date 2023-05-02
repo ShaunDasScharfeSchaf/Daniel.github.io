@@ -1,20 +1,118 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <link rel="stylesheet" href="stylesheet.css">
-    <title>Die Familie Wollziefer</title>
+<title>Reifenhändler</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="ReifenCSS.css">
+<link rel="stylesheet" href="FunktionReifen.css">
+<style>
+body, html {
+  height: 100%;
+  font-family:'Courier New',sans-serif;
+}
+
+.BildOben {
+  background-position: center;
+  background-size: cover;
+  background-image: url(TestLand.jpg);
+  min-height: 75%;
+  background-color: antiquewhite;
+}
+</style>
 </head>
 
-<body>
-    <h1>Auf diesen glorreichen Seiten stelle ich euch Daniels Familie vor.</h1>
-    <p>Auf dieser Seite möchte ich euch <a href=DanielsMum.html>Daniels Mutter</a> vorstellen</p>
+<body style=background-color:fdf9f4>
+    <!-- Leiste Oben -->
+      <div class="navbar">
+        <nav>
+           <ul>
+              <li class="Test"><a href="#">Übersicht</a></li>
+              <li class="Test"><a href="#about">Über uns</a></li>
+              <li class="Test"><a href="#Angebote">Unsere Angebote</a></li>
+              <li class="Test"><a href="#where">Standort</a></li>
+          </ul>
+        </nav>
+        
+      </div>
     
-    <br><p>Auf dieser Seite möchte ich euch <a href=DanielsDad.html>Daniels Dad</a>vorstellen</p>
+    <!-- Schrift im Titelbild -->
+    <header class="BildOben" id="home">
+      <div class="TextBildMittig center">
+        <span class="W" style="font-size:90px">keine<br>Ahnung</span>
+      </div>
+    </header>
+        
+    <!-- About Container -->
+    <div class="Reiter" id="about">
+      <div class="Center" style="max-width:50%">
+        <h5 class="PaddingMitte Groß SchwarzHinterlegt">Über uns</h5>
+        <p>Unser Reifenhändler ist seit vielen Jahren ein zuverlässiger Partner für Autofahrer in der Region. Wir bieten unseren Kunden eine breite Auswahl an Reifen namhafter Hersteller, darunter Sommerreifen, Winterreifen und Ganzjahresreifen. Unser Sortiment umfasst auch Spezialreifen wie Run-Flat-Reifen und Offroad-Reifen.</p>
+        <p>Unsere Mitarbeiter verfügen über umfassendes Know-how und sind immer auf dem neuesten Stand der Technik. Wir bieten unseren Kunden nicht nur den Verkauf von Reifen an, sondern auch fachkundige Beratung, um die bestmögliche Wahl zu treffen. Wir helfen unseren Kunden dabei, die richtigen Reifen für ihr Fahrzeug, ihren Fahrstil und ihre Bedürfnisse zu finden.</p>
+        <p>Neben dem Verkauf von Reifen bieten wir auch Achsvermessungen an, um sicherzustellen, dass das Fahrzeug optimal ausgerichtet ist. Eine korrekte Achsausrichtung ist wichtig, um die Lebensdauer der Reifen zu verlängern, die Fahrstabilität und das Handling zu verbessern sowie den Kraftstoffverbrauch zu reduzieren.</p>
+        <p>Wir sind stolz darauf, unseren Kunden einen erstklassigen Service und faire Preise zu bieten. Unser Ziel ist es, dass unsere Kunden mit ihrem Einkauf bei uns zufrieden sind und sich auf uns verlassen können. Wenn Sie nach Reifen suchen oder eine Achsvermessung benötigen, besuchen Sie uns gerne und lassen Sie uns Ihnen helfen.</p>
+        <img src="/w3images/coffeeshop.jpg" style="width:100%;max-width:1000px">
+      </div>
+    </div>
     
-    <br><p>Auf dieser Seite möchte ich euch <a href=DanielsSchwester.html>Daniels Schwester</a> vorstellen</p>
+    <!-- Angebote Container -->
+    <div class="Reiter" id="Angebote">
+      <div class="Center" style="max-width:50%">
+        <h5 class="Groß">Unsere Angebote</h5>
+        
+        <div class="Center">
+          <a href="javascript:void(0)" onclick="openMenu(event, 'Reifen');" id="myLink">
+            <div class="tablink">Reifen</div>
+          </a>
+          <a href="javascript:void(0)" onclick="openMenu(event, 'Achsvermessung');">
+            <div class="tablink">Achsvermessung</div>
+          </a>
+        </div>
 
+        <div id="Reifen" class="Angebote w3-padding-48 w3-card">
+          <h5>Pirelli Sommerreifen</h5>
+          <p>Viel Gummi</p><br>
+        </div>
 
-</body>
-
-</html>
+        <div id="Achsvermessung" class="Reiter Angebote w3-padding-48 w3-card">
+            <h5>Achsvermessung</h5>
+            <p>Machen sie eine Achsvermessung</p><br>
+        </div>
+    </div>
+    
+    <!-- Übersicht Container -->
+    <div class="Reiter" id="where" style="padding-bottom:32px;">
+      <div class="Center" style="max-width:50%">
+        <h5 class="Center Groß"><span class="Groß">Übersicht</span></h5>
+        <p><strong>Öffnungszeiten:</strong> immer</p>
+        <p><strong>Adresse:</strong> Hier</p>
+        <img src="/w3images/map.jpg" style="width:100%">
+      </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="Center Groß  PaddingFooter">
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+    </footer>
+    
+    <!--Funktion Menüleiste-->
+    <script>
+        // Tabbed Menu
+        function openMenu(evt, menuName) {
+          var i, x, tablinks;
+          x = document.getElementsByClassName("Angebote");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < x.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" WS", "");
+          }
+          document.getElementById(menuName).style.display = "block";
+          evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+        }
+        document.getElementById("myLink").click();
+        </script>
+    
+    </body>
+    </html>
